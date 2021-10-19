@@ -1,0 +1,94 @@
+<!--  All the functional stuff is taken care of. Just need to tweak CSS to make it look better.-->
+
+
+
+<header>
+  <h1 id="title">Horn Stars Concert Season Planning Survey</h1>
+  <p id="description">Thank you for helping plan our next season of music</p>
+</header>
+
+
+<main>
+  <div class="survey-form-container">
+  <form id="survey-form">
+    <div class="form-group">
+    <label id="name-label" for="name">Please enter your name: 
+    <input id="name"
+           type="text"
+           required
+           placeholder="Your Name"
+           class="form-control">
+           </label>
+    </div>
+    <div class="form-group">
+     <label id="email-label" for="email">Please enter your email address: 
+    <input id="email"
+           type="email"
+   placeholder="name@domain.com"
+           required
+           class="form-control">
+           </label>
+    </div>
+    <div class="form-group">
+         <label id="number-label" for="number">Your Age (not that it matters):
+    <input id="number"
+           type="number"
+           placeholder="xx"
+           min="10"
+           max="115"
+           class="form-control"></label>
+    </div>
+    <div class="form-group">
+    <p id="dropdown-role" for="dropdown">Your role in the Horn Stars is best described as: 
+      <select id="dropdown"
+             type="dropdown"
+             required
+              class="form-control">
+        <option disabled selected value>Choose one</option>
+      <option value="main-member">Main member</option>
+        <option value="sub">Sub</option>
+        <option value="assistant-organizer">Assistant/organizer</option>
+      </select>
+    </div>
+    <div class="form-group">
+    <p>Are you able to play with the Horn Stars this season? </p>
+      <label for="yes">
+        <input id="yes" value="Yes" type="radio" name="availability" class="input-radio">Yes
+      </label>
+     <label for="no">
+        <input id="no" value="No" type="radio" name="availability" class="input-radio">No
+      </label>
+     <label for="unsure">
+        <input id="unsure" value="Unsure" type="radio" name="availability" class="input-radio">Unsure
+      </label>
+    </div>
+     <div class="form-group">
+       <p>What types of music would you like to play this season? Check all that apply. </p>
+       <label for="gauers-originals">
+         <input id="gauers-originals" class="input-checkbox" type="checkbox" value="Gauer's originals">Gauer's originals
+         </label>
+       <label for="other-originals">
+         <input id="other-originals" class="input-checkbox" type="checkbox" value="Other originals">Other people's originals
+         </label>
+        <label for="jazz-standards">
+         <input id="jazz-standards" class="input-checkbox" type="checkbox" value="Jazz standards">Jazz standards
+         </label>
+        <label for="covers">
+         <input id="covers" class="input-checkbox" type="checkbox" value="New arrangements of rock/funk/pop covers">New arrangements of rock/funk/pop covers
+         </label>
+    </div>
+    <div class="form-group">
+      <p>Do you have any additional thoughts or ideas for this season of music? </p>
+      <textarea id="comments" class="input-textarea" placeholder="Any thoughts or ideas here"></textarea>
+      
+    </div>
+    
+    <div class="form-group">
+    <button id="submit" type="submit">Submit</button
+      </div>
+     
+  </form>
+  
+</main>
+
+</div>
